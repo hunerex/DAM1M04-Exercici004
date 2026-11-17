@@ -1,0 +1,52 @@
+/* =========================================================
+   STRATA — Pàgina 2 (Workflows)
+   ========================================================= */
+
+.workflows-section { background: var(--bg-warm); }
+
+.workflows {
+  border-top: 1px solid var(--line);
+  margin-top: 20px;
+}
+.workflow {
+  display: flex; gap: 40px;
+  padding: 38px 0;
+  border-bottom: 1px solid var(--line);
+}
+.wf-label { flex: 0 0 200px; }
+.workflow div { flex: 1; max-width: 660px; }
+.workflow h3 { font-size: 24px; font-weight: 400; margin-bottom: 12px; }
+.workflow p { font-size: 17px; color: var(--muted); }
+
+.tag {
+  display: inline-block;
+  font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: #926f50; background: #fbe8d2;
+  border: 1px solid #f0d2b0; border-radius: 999px;
+  padding: 4px 10px;
+}
+
+.workflow-sub {
+  padding-left: 48px;
+  background: linear-gradient(90deg, #efede7, transparent 40%);
+}
+.workflow-sub .tag { text-transform: none; font-size: 12px; }
+
+.arrow {
+  margin-left: auto; font-size: 22px; color: var(--muted);
+  opacity: 0.35; transition: opacity 0.2s, transform 0.2s;
+}
+.workflow:hover .arrow { opacity: 1; transform: translateX(4px); }
+
+/* ---------- Responsive Pàgina 2 ---------- */
+@media (max-width: 1024px) {
+  .page-title { font-size: 56px; }
+}
+@media (max-width: 767px) {
+  .workflow { flex-direction: column; gap: 12px; padding: 28px 0; }
+  .workflow-sub { padding-left: 14px; }
+  .wf-label { flex-basis: auto; }
+  .workflow h3 { font-size: 20px; }
+  .workflow p { font-size: 15px; }
+  .arrow { display: none; }
+}   

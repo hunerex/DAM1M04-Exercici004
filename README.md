@@ -5,7 +5,7 @@
 | Integrante | Responsabilidad |
 |---|---|
 | **Jairo** | Página 1 (Home) |
-| **Integrante 2** | Página 2 (Workflows) y Página 3 (Atlas + Governance) |
+| **Jhonnatan Loaiza* | Página 2 (Workflows) y Página 3 (Atlas + Governance) |
 
 ---
 
