@@ -1,0 +1,183 @@
+/* =========================================================
+   STRATA — Pàgina 1 (Home)
+   Hero, Platform, Band, Operational Value, From the Field
+   ========================================================= */
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative; isolation: isolate; overflow: hidden;
+  padding-top: 100px;
+  background:
+    radial-gradient(ellipse at 80% 15%, #f3dce8, transparent 60%),
+    radial-gradient(ellipse at 60% 0%, #fae6d1, transparent 55%),
+    #fbfbfa;
+}
+.hero-graph {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+  mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+}
+.hero-graph canvas {
+  display: block; background: transparent; pointer-events: none;
+}
+.hero > .container { position: relative; z-index: 1; }
+
+.hero-icon { width: 56px; margin-bottom: 34px; }
+.hero h1 {
+  font-size: 88px; line-height: 1.05; letter-spacing: -0.035em;
+  max-width: 900px; margin-bottom: 36px;
+}
+.hero-text { font-size: 22px; max-width: 780px; margin-bottom: 40px; }
+
+.hero-shot {
+  margin-top: 135px; max-height: 520px; overflow: hidden;
+  border: 1px solid #d9dfee; border-bottom: none;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 0 60px rgba(120, 150, 220, 0.25);
+  -webkit-mask-image: linear-gradient(to bottom, #000 80%, transparent);
+  mask-image: linear-gradient(to bottom, #000 80%, transparent);
+}
+
+/* ---------- Platform ---------- */
+.cards { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 26px; }
+.card {
+  flex: 1 1 260px; padding: 36px;
+  border: 1px solid; border-radius: 12px;
+}
+.card h3, .core h3 { font-size: 30px; font-weight: 500; margin-bottom: 26px; }
+.card h3 span, .core h3 span { color: #8a8b90; font-weight: 400; }
+.card p, .core p { font-size: 17px; color: var(--muted); }
+
+.card-atlas { border-color: #cfe3d2; background: linear-gradient(#edf4ed, var(--bg) 70%); }
+.card-nexus { border-color: #c7d6ee; background: linear-gradient(#e8eff7, var(--bg) 70%); }
+.card-canvas { border-color: #dcc6e6; background: linear-gradient(#f2e7f5, var(--bg) 70%); }
+
+.core {
+  display: flex; align-items: center; gap: 40px;
+  margin-top: 20px; padding: 30px 32px;
+  background: #f5f5f3; border: 1px solid var(--line); border-radius: 12px;
+}
+.core h3 { flex: 0 0 210px; margin-bottom: 0; font-size: 24px; }
+.core p { max-width: 700px; }
+
+/* ---------- Band ---------- */
+.band {
+  padding: 100px 0; text-align: center;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(ellipse at 100% 0%, #c2d2e9, transparent 40%),
+    radial-gradient(ellipse at 10% 110%, #dce4cd, transparent 45%),
+    #f4f2ec;
+}
+.band-main {
+  font-size: 32px; color: var(--ink); line-height: 1.25; margin-bottom: 26px;
+}
+.band-main strong { font-weight: 600; }
+.band-sub { font-size: 32px; color: var(--text); }
+
+/* ---------- Operational Value ---------- */
+.panel {
+  max-width: 980px; margin-top: 56px; padding: 34px 40px 40px;
+  background: #fff; border: 1px solid #c7d6ee; border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(30, 40, 80, 0.08);
+}
+.panel-top {
+  display: flex; justify-content: space-between; gap: 20px;
+  padding-bottom: 18px; border-bottom: 1px solid var(--line);
+  font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--muted);
+}
+.metrics { display: flex; gap: 40px; margin-top: 18px; }
+.metric { flex: 1; }
+.metric-label::before {
+  content: ""; display: block; width: 18px; height: 4px; border-radius: 2px;
+  background: var(--grad-bar); margin-bottom: 14px;
+}
+.metric-label {
+  font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--muted);
+}
+.metric-number {
+  font-size: 84px; font-weight: 300; color: var(--ink);
+  letter-spacing: -0.03em; line-height: 1.15;
+  animation: rise 0.9s ease-out both;
+}
+.unit { color: #8a8b90; }
+.unit-small { font-size: 40px; margin-left: 6px; }
+.metric-text { font-size: 14px; color: var(--muted); }
+.badge {
+  display: inline-block; margin-left: 6px; padding: 2px 9px;
+  font-size: 11px; color: var(--ink);
+  background: #e3eef5; border: 1px solid #c9dce9; border-radius: 999px;
+}
+
+/* ---------- From the Field (dark) ---------- */
+.dark {
+  color: #b9bbc2;
+  background:
+    radial-gradient(ellipse at 90% 15%, rgba(70, 120, 110, 0.45), transparent 50%),
+    var(--dark);
+}
+.dark .eyebrow { color: #d5d6da; }
+.dark .two-cols { align-items: center; }
+.field-text { flex: 1 1 620px; }
+.big-number {
+  font-size: 150px; font-weight: 300; color: #fff;
+  letter-spacing: -0.03em; line-height: 1;
+  animation: rise 1s ease-out both;
+}
+.dark .mono-label { color: #a0a2aa; margin: 14px 0 34px; }
+.field-story {
+  font-size: 19px; color: #c7c8ce; max-width: 620px;
+  padding-bottom: 44px; margin-bottom: 26px; border-bottom: 1px solid #2e3038;
+}
+.field-note { font-size: 14px; max-width: 540px; }
+
+.data-card {
+  flex: 0 1 440px; padding: 34px 28px 22px;
+  border: 1px solid #2c2e35; border-radius: 14px;
+  background:
+    linear-gradient(90deg, #c8b04a, #5fb0a0, #6a5fd0) top / 100% 2px no-repeat,
+    rgba(255, 255, 255, 0.04);
+}
+.data-card .mono-label { margin: 0; padding-bottom: 18px; }
+.data-card dl div {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 0; border-top: 1px solid #2c2e35;
+}
+.data-card dt { font-size: 15px; }
+.data-card dd { font-size: 24px; color: #fff; }
+
+/* ---------- Responsive Pàgina 1 ---------- */
+@media (max-width: 1024px) {
+  .hero h1 { font-size: 76px; }
+  .metric-number { font-size: 64px; }
+  .data-card { flex-basis: auto; width: 100%; }
+}
+@media (max-width: 767px) {
+  .hero { padding-top: 50px; }
+  .hero-icon { width: 40px; margin-bottom: 24px; }
+  .hero h1 { font-size: 46px; }
+  .hero-text { font-size: 18px; }
+  .hero-shot { margin-top: 90px; max-height: 90px; }
+
+  .card { padding: 26px; }
+  .card h3 { font-size: 26px; }
+  .core { flex-direction: column; align-items: flex-start; gap: 18px; padding: 26px; }
+  .core h3 { flex-basis: auto; }
+
+  .band { padding: 64px 0; }
+  .band-main, .band-sub { font-size: 20px; }
+  .band-main br { display: none; }
+
+  .panel { padding: 22px 16px; }
+  .panel-top { font-size: 10px; }
+  .metrics { flex-direction: column; gap: 30px; }
+  .metric-number { font-size: 48px; }
+  .unit-small { font-size: 26px; }
+
+  .big-number { font-size: 72px; }
+  .field-story { font-size: 16px; }
+  .data-card { padding: 26px 20px 14px; }
+  .data-card dd { font-size: 18px; }
+}
